@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    margin: 0;
+    background: lightgreen;    
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8vmin;
+}
+
+header, footer {
+    position: fixed;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    z-index: 2;
+}
+
+header {
+    top: 0;
+    transition: top 0.5s;
+}
+
+footer {
+    bottom: 0;
+    transition: bottom 0.5s;
+    text-align: center; 
+}
+
+header div.main-icon {
+    width: 60%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+header div.main-icon a {
+    text-decoration: none;
+    display: flex;
+    max-width: 35vmin;
+}
+
+header div.main-icon img {
+    min-width: 50px;
+    width: 5%;
+    height: 5%;
+    max-width: 70px;
+}
+
+header div.main-icon p {
+    display: inline;
+    font-size: 1.5em;
+    color: darkseagreen;
+    font-style: italic;
+    font-weight: bold;
+    padding: 4% 0;
+}
+
+header div.contact-link {
+    display: flex;
+    flex-flow: row-reverse;
+    float: left;
+    width: 40%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+header div.contact-link a {
+    text-decoration: none;
+}
+
+header div.contact-link a span, div.form-button-row input{
+    border: 1px solid skyblue;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #a7cfdf, #0517ef);
+    color: white;
+    font-size: 1.2em;    
+}
+
+header div.contact-link a span, div.form-button-row input, button.social-btn {
+    cursor: pointer;
+    box-shadow: -2px -4px 1.5px rgba(0,0,0,0.3) inset;
+}
+
+header div.contact-link a span:hover, div.form-button-row input:hover, button.social-btn:hover {
+    box-shadow: -2px -4px 1.5px rgba(0,0,0,0.5) inset;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    margin: 5px;
+}

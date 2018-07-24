@@ -1,0 +1,265 @@
+
+main section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main section div.page-intro-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    top: 25vh;
+    position: absolute;
+    width: 100%;
+}
+
+main section#pageIntro {
+    background: url("resources/images/page-intro-3.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+main section#pageIntro p {
+    color: GHOSTWHITE;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
+}
+
+main section#pageIntro p.main-text {
+    font-size: 5em;
+}
+
+ul.text-animation-list {
+    list-style: none;
+    padding: 0;
+    height: 4em;
+    overflow: hidden;
+}
+
+ul.text-animation-list li.text-animation-list-item {
+    animation-name: goThroughList;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes goThroughList {
+    0%, 12.5%, 100% {transform:translateY(0)}
+    25%, 40% {transform:translateY(-111%)}
+    50%, 65% {transform:translateY(-222%)}
+    75%, 95% {transform:translateY(-333%)}
+}
+
+section#getRelaxed {
+    background: url("resources/images/relax.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#getMoving {
+    background: url("resources/images/seawall_biking.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#getChallenged {
+    background: url("resources/images/grouse-grind.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section div.section-content {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.85) 10%, rgba(255, 255, 255, 0.85) 90%, rgba(255, 255, 255, 0.5) 100%);
+    position: absolute;
+    text-align: center;
+    top: 20vh;
+    width: 100%;
+}
+
+section div.section-content, section div.section-content a, section div.section-content-suggestions a {
+    color: forestgreen;
+}
+
+section div.section-content .section-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+section div.section-content .section-text {
+    font-size: 2em;
+}
+
+section div.section-content .section-brief {
+    padding: 0 10%;
+    font-size: 1.3em;
+}
+
+section div.section-content-suggestions {
+    display: flex;
+    position: absolute;
+    top: 55vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section div.section-content-suggestions div.section-suggestion {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+section div.section-content-suggestions div.section-suggestion p.suggestion-title {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+section#local-parks {
+    background: url("resources/images/camping.jpg") no-repeat center center;
+    background-size: cover;
+    
+}
+
+section#vandusen-garden {
+    background: url("resources/images/VanDusen_Garden.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#queen-elizabeth-park {
+    background: url("resources/images/Queen_Elizabeth_Park.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#stanley-park {
+    background: url("resources/images/Stanley-Park-Seawall-biking.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#deer-lake-park {
+    background: url("resources/images/Deer_Lakes_Image.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#capilano-suspension-bridge {
+    background: url("resources/images/Capilano_Suspension_Bridge.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#burnaby-mountain {
+    background: url("resources/images/burnaby-mountain-bike.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#lynn-canyon-park {
+    background: url("resources/images/lynn-canyon-park-trail.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section#grouse-mountain {
+    background: url("resources/images/Grouse_Mountain_Zipline.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section div.section-content div.section-detail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+
+section div.section-content div.section-detail table {
+    width: 50%;
+    border: 1px solid forestgreen;
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+section div.section-content div.section-detail table td {
+    border: 1px solid forestgreen;
+    padding: 10px;
+    text-align: left;
+}
+
+div.section-detail table tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+div.section-detail table tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+div.section-detail table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+div.section-detail table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+div.section-detail table tr td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+
+div.section-detail table tr td:last-child {
+    width: 70%;
+}
+
+div.section-detail table tr td ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+div.section-detail table tr td a:after{
+    content: attr(href);
+}
+
+section div.section-content div.section-detail div.attraction-map {
+    height: 25vmax;
+    width: 25vmax;
+}
+
+/* Responsive for small phone screen */
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+    main section#pageIntro div.page-intro-content p.main-text {
+        font-size: 3.5em;
+    }
+
+    section div.section-content-suggestions {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    section div.section-content {
+        top: 13vh;
+    }
+
+    section div.section-content p.section-brief {
+        display: none;
+    }
+
+    section div.section-content div.section-detail table tr:nth-child(2),
+    section div.section-content div.section-detail table tr:nth-child(4),
+    section div.section-content div.section-detail table tr:nth-child(5),
+    section div.section-content div.section-detail table tr:nth-child(6) {
+        display: none;
+    }
+}
+
+/* Responsive for vertical screen */
+@media screen and (orientation:portrait) {
+    section div.section-content div.section-detail {
+        flex-flow: column;
+    }
+
+    section div.section-content div.section-detail table {
+        margin: 2vh 0;
+    }
+
+    section#getRelaxed div.section-content,
+    section#getMoving div.section-content,
+    section#getChallenged div.section-content {
+        top: 35vh;
+    }
+}

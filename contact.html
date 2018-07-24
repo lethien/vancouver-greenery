@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Vancouver Greenery | Contact Us</title>
+    <link href="resources/icons/page-icon.png" rel="icon" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="contact-style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="main-icon">
+            <a href="/">
+                <img src="resources/icons/page-icon.png" alt="Page Icon" />
+                <p>Vancouver Greenery</p>
+            </a>
+        </div>
+
+        <div class="contact-link">
+            <a href="contact.html"><span>Contact Us</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="social-networks-section">
+            <button id="fb-btn" class="social-btn"></button>
+            <button id="tw-btn" class="social-btn"></button>
+            <button id="ig-btn" class="social-btn"></button>
+        </section>
+        <section class="email-form-section">
+            <p>Contact Us</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <div class="form-row">
+                        <label for="email">From:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="vgEmail">To:</label>
+                        <input type="text" id="vgEmail" name="vgEmail" value="contact@vangreen.bc.ca" disabled/>
+                    </div>
+                    <div class="form-row">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" />
+                    </div>
+                    <div class="form-row">
+                        <label for="messsage">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-row form-button-row">
+                        <input type="reset" value="Clear" />
+                        <input type="submit" value="Send" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy;Vancouver Greenery. Designed by Toan Le 2018
+    </footer>
+</body>
+
+</html>
