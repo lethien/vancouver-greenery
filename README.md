@@ -12,3 +12,5 @@ Attemp to animate smooth scrolling but not as good as using JQuery.
 
 Support browsers: Chrome, Firefox, Opera
 Partialy support browsers (no scrolling affect and/or hiding some information): IE, Edge and Mobile browsers
+
+# This is just a simple web that I use to practice AWS
